@@ -1,0 +1,21 @@
+{
+  "nombre": "Isidora Gómez",
+  "titular": "Estudiante de Ingeniería en Informática",
+  "bio": "Bienvenida a mi portafolio personal donde comparto mis proyectos y noticias recientes. ¡Explora y conoce más sobre mí!",
+  "foto": "img/avatar.jpg",
+  "fotoAlt": "Imagen de perfil de Isidora",
+  "redes": [
+    { "id": "github", "etiqueta": "GitHub", "url": "https://github.com/IsiGomez" },
+    { "id": "linkedin", "etiqueta": "LinkedIn", "url": "https://www.linkedin.com/in/isidora-catherine-gomez-jeldres" },
+    { "id": "instagram", "etiqueta": "Instagram", "url": "https://www.instagram.com/isis_g937" }
+  ],
+  "email": "is.gomezj@duocuc.cl",
+  "sobreMi": {
+    "parrafos": [
+        "Estudio Ingeniería en Informática y he trabajado tanto en proyectos grupales como individuales.",
+        "En el frontend utilizo React, JavaScript y Bootstrap. En el backend trabajo con Java, Spring Boot y bases de datos relacionales.",
+        "Este portafolio forma parte de mi evaluación de Desarrollo Fullstack II y lo uso para practicar componentes reutilizables y pruebas unitarias."    
+    ],
+    "habilidades": ["React", "JavaScript", "Bootstrap", "HTML y CSS", "Java", "Spring Boot", "SQL", "Docker", "Git", "Vitest"]
+  }
+}

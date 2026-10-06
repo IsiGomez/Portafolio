@@ -1,0 +1,44 @@
+{
+  "secciones": [
+    {
+      "id": "tecnologia",
+      "titulo": "Noticias de tecnología",
+      "noticias": [
+        {
+          "id": "react-18",
+          "titulo": "React 18 llega con renderizado concurrente",
+          "fecha": "2022-03-29",
+          "contenido": "La versión 18 introdujo el renderizado concurrente y el procesamiento por lotes automático de actualizaciones de estado.",
+          "enlace": "https://react.dev/blog/2022/03/29/react-v18"
+        },
+        {
+          "id": "bootstrap-5-3",
+          "titulo": "Bootstrap 5.3 incorpora modos de color",
+          "fecha": "2023-05-30",
+          "contenido": "Bootstrap 5.3 agregó soporte oficial para modo claro y oscuro mediante el atributo data-bs-theme.",
+          "enlace": "https://blog.getbootstrap.com/2023/05/30/bootstrap-5-3-0/"
+        }
+      ]
+    },
+    {
+      "id": "formacion",
+      "titulo": "Novedades de mi formación",
+      "noticias": [
+        {
+          "id": "vestuario-html",
+          "titulo": "Vestuario Jacinta con HTML",
+          "fecha": "2026-09-09",
+          "contenido": "Desarrollo de página web con HTML, CSS y JavaScript.",
+          "enlace": "https://github.com/IsiGomez/VestuarioJacinta"
+        },
+        {
+          "id": "pruebas-unitarias",
+          "titulo": "Primeras pruebas unitarias con Vitest",
+          "fecha": "2026-10-04",
+          "contenido": "Las pruebas cubren renderizado, eventos, estado y manipulación del DOM, con informe de cobertura.",
+          "enlace": "https://github.com/IsiGomez/Prue_Unitarias"
+        }
+      ]
+    }
+  ]
+}

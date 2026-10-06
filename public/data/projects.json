@@ -1,0 +1,34 @@
+{
+  "proyectos": [
+    {
+      "id": "infra-supermercado",
+      "titulo": "Infra-Supermercado",
+      "descripcion": "Sistema de supermercado con más de 10 microservicios Spring Boot, API Gateway, Eureka y Kafka, desplegado con Docker Compose.",
+      "imagen": "img/proyecto-supermercado.svg",
+      "imagenAlt": "Diagrama de microservicios conectados a un API Gateway",
+      "tecnologias": ["Java", "Spring Boot", "Kafka", "Eureka", "Docker"],
+      "enlace": "https://github.com/IsiGomez/Infra-Supermercado",
+      "etiquetaEnlace": "Ver repositorio"
+    },
+    {
+      "id": "vestuario-jacinta",
+      "titulo": "Vestuario Jacinta",
+      "descripcion": "Sitio de comercio electrónico de 9 páginas con diseño responsivo y HTML semántico.",
+      "imagen": "img/proyecto-vestuario.webp",
+      "imagenAlt": "Maqueta de una tienda en línea con tarjetas de productos",
+      "tecnologias": ["HTML", "Bootstrap 5", "JavaScript"],
+      "enlace": "https://github.com/IsiGomez/VestuarioJacinta",
+      "etiquetaEnlace": "Ver repositorio"
+    },
+    {
+      "id": "portafolio-react",
+      "titulo": "Este portafolio",
+      "descripcion": "Portafolio en React con datos cargados desde JSON, componentes reutilizables y pruebas unitarias con informe de cobertura.",
+      "imagen": "img/proyecto-portafolio.webp",
+      "imagenAlt": "Esquema de componentes React y pruebas unitarias",
+      "tecnologias": ["React", "Bootstrap", "Vitest"],
+      "enlace": "https://github.com/IsiGomez/Portafolio",
+      "etiquetaEnlace": "Ver repositorio"
+    }
+  ]
+}
