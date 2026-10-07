@@ -1,68 +1,59 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --tinta: #082346;
+  --azul: #1d4ed8;
+  --azul-oscuro: #1e3a8a;
+  --celeste: #38bdf8;
+  --foco: #3b82f6;
+  --bs-dark-rgb: 11, 31, 58; /* navbar */
 }
 
-a {
+.badge-tech {
+  background: var(--azul-oscuro);
+  color: #fff;
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  padding: 7px;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
+/* Título de sección con línea decorativa */
+.seccion-titulo::after {
+  content: '';
+  display: block;
+  width: 6rem;
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  background: var(--celeste);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+/* Portada */
+.hero {
+  background: linear-gradient(135deg, var(--tinta) 0%, var(--azul-oscuro) 100%);
+  color: #f8fafc;
+}
+.hero-foto {
+  border: 6px solid var(--celeste);
+}
+.hero-nombre {
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.hero-titular {
+  font-size: 1.35rem;
+  color: var(--celeste);
+}
+.hero-bio {
+  max-width: 60ch;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Sobre mi */
+.habilidades-card {
+  border-top: 4px solid var(--celeste);
+}
+.sobre-mi-texto {
+  font-size: 1.05rem;
 }
