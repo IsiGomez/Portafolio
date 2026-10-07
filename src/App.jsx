@@ -1,11 +1,18 @@
-import { useJsonData } from './hooks/useJsonData.js';
-import { DATA_PATHS } from './services/dataService.js';
+import Navbar from './components/Navbar.jsx';
+
+export const ENLACES = [
+  { id: 'introduccion', etiqueta: 'Introducción' },
+  { id: 'sobre-mi', etiqueta: 'Sobre mí' },
+  { id: 'proyectos', etiqueta: 'Proyectos' },
+  { id: 'noticias', etiqueta: 'Noticias' },
+  { id: 'contacto', etiqueta: 'Contacto' },
+];
 
 export default function App() {
-  const { data, loading, error } = useJsonData(DATA_PATHS.perfil);
-
-  if (loading) return <p>Cargando…</p>;
-  if (error) return <p>Error: {error.message}</p>;
-
-  return <h1 className="p-4 text-primary">{data.nombre}</h1>;
+  return (
+    <>
+      <Navbar marca="Portafolio" enlaces={ENLACES} />
+      <main id="contenido" />
+    </>
+  );
 }
