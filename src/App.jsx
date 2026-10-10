@@ -5,6 +5,8 @@ import Estado from './components/Estado.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Projects from './components/Projects.jsx';
 import News from './components/News.jsx';
+import { construirMailto } from './utils/mailto.js';
+import Contacto from './components/Contact.jsx';
 
 export const ENLACES = [
   { id: 'introduccion', etiqueta: 'Introducción' },
@@ -16,6 +18,11 @@ export const ENLACES = [
 
 export default function App() {
   const { data: perfil, loading, error } = useJsonData(DATA_PATHS.perfil);
+
+  const abrirCorreo = (datos) => {
+  if (!perfil?.email) return;
+  window.location.href = construirMailto(perfil.email, datos);
+  };
 
   return (
     <>
@@ -37,6 +44,10 @@ export default function App() {
           )}
           <Projects />
           <News />
+          <Contacto
+            onEnviar={abrirCorreo}
+            mensajeExito="Se abrió tu programa de correo con el mensaje listo para enviar."
+          />
         </Estado>
       </main>
     </>

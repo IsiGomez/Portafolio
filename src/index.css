@@ -4,6 +4,7 @@
   --azul-oscuro: #1e3a8a;
   --celeste: #38bdf8;
   --foco: #3b82f6;
+  --texto-suave: #475569;
   --bs-dark-rgb: 11, 31, 58; /* navbar */
 }
 
@@ -21,6 +22,17 @@ section[id] {
 
 
 /* Botones */
+.btn-primary {
+  --bs-btn-bg: var(--azul);
+  --bs-btn-border-color: var(--azul);
+  --bs-btn-hover-bg: var(--azul-oscuro);
+  --bs-btn-hover-border-color: var(--azul-oscuro);
+  --bs-btn-active-bg: var(--azul-oscuro);
+  --bs-btn-active-border-color: var(--azul-oscuro);
+  --bs-btn-disabled-bg: var(--azul);
+  --bs-btn-disabled-border-color: var(--azul);
+}
+
 .btn-outline-primary {
   --bs-btn-color: var(--azul);
   --bs-btn-border-color: var(--azul);
@@ -40,6 +52,9 @@ section[id] {
   margin-top: 0.5rem;
   border-radius: 2px;
   background: var(--celeste);
+}
+.seccion-titulo.text-center::after {
+  margin-inline: auto;
 }
 
 
@@ -127,4 +142,11 @@ section[id] {
 .noticia-enlace:hover,
 .noticia-enlace:focus-visible {
   text-decoration: underline;
+}
+
+
+/* Contacto */
+.contacto-intro {
+  max-width: 40rem;
+  color: var(--texto-suave);
 }
