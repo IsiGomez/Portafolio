@@ -108,3 +108,23 @@ section[id] {
     transform: none;
   }
 }
+
+
+/* Noticias */
+.noticias-subtitulo {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--azul);
+  color: var(--azul-oscuro);
+  font-weight: 700;
+}
+.noticia-card {
+  border-left: 4px solid var(--azul);
+}
+.noticia-enlace {
+  font-weight: 600;
+  text-decoration: none;
+}
+.noticia-enlace:hover,
+.noticia-enlace:focus-visible {
+  text-decoration: underline;
+}

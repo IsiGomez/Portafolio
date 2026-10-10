@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.jsx';
 import Estado from './components/Estado.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Projects from './components/Projects.jsx';
+import News from './components/News.jsx';
 
 export const ENLACES = [
   { id: 'introduccion', etiqueta: 'Introducción' },
@@ -35,6 +36,7 @@ export default function App() {
             />
           )}
           <Projects />
+          <News />
         </Estado>
       </main>
     </>
