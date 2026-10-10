@@ -3,6 +3,7 @@ import { DATA_PATHS } from './services/dataService.js';
 import Navbar from './components/Navbar.jsx';
 import Estado from './components/Estado.jsx';
 import AboutMe from './components/AboutMe.jsx';
+import Projects from './components/Projects.jsx';
 
 export const ENLACES = [
   { id: 'introduccion', etiqueta: 'Introducción' },
@@ -33,6 +34,7 @@ export default function App() {
               habilidades={perfil.sobreMi?.habilidades}
             />
           )}
+          <Projects />
         </Estado>
       </main>
     </>

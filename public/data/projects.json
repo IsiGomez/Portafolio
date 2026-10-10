@@ -4,11 +4,12 @@
       "id": "infra-supermercado",
       "titulo": "Infra-Supermercado",
       "descripcion": "Sistema de supermercado con más de 10 microservicios Spring Boot, API Gateway, Eureka y Kafka, desplegado con Docker Compose.",
-      "imagen": "img/proyecto-supermercado.svg",
+      "imagen": "img/proyecto-supermercado.webp",
       "imagenAlt": "Diagrama de microservicios conectados a un API Gateway",
       "tecnologias": ["Java", "Spring Boot", "Kafka", "Eureka", "Docker"],
       "enlace": "https://github.com/IsiGomez/Infra-Supermercado",
-      "etiquetaEnlace": "Ver repositorio"
+      "etiquetaEnlace": "Ver repositorio",
+      "imagenClase": "card-img-contain"
     },
     {
       "id": "vestuario-jacinta",

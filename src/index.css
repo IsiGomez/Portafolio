@@ -1,6 +1,6 @@
 :root {
   --tinta: #082346;
-  --azul: #1d4ed8;
+  --azul: #2453d6;
   --azul-oscuro: #1e3a8a;
   --celeste: #38bdf8;
   --foco: #3b82f6;
@@ -12,6 +12,22 @@
   color: #fff;
   font-weight: 500;
   padding: 7px;
+}
+
+
+section[id] {
+  scroll-margin-top: 3rem;
+}
+
+
+/* Botones */
+.btn-outline-primary {
+  --bs-btn-color: var(--azul);
+  --bs-btn-border-color: var(--azul);
+  --bs-btn-hover-bg: var(--azul);
+  --bs-btn-hover-border-color: var(--azul);
+  --bs-btn-active-bg: var(--azul);
+  --bs-btn-active-border-color: var(--azul);
 }
 
 
@@ -56,4 +72,39 @@
 }
 .sobre-mi-texto {
   font-size: 1.05rem;
+}
+
+
+/* Tarjetas de proyecto: imagen 16:9 y elevación al pasar el mouse */
+.proyecto-card .card-img-top {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.proyecto-card .card-img-top.card-img-contain {
+  object-fit: contain;
+  background-color: #1b2333;
+}
+.proyecto-card .card-img-top
+.proyecto-card {
+  transition: transform 1s ease, box-shadow 1s ease;
+}
+.proyecto-card:has(:focus-visible) {
+  transform: translateY(-6px);
+  box-shadow: var(--bs-box-shadow-lg);
+}
+@media (hover: hover) {
+  .proyecto-card:hover {
+    transform: translateY(-6px);
+    box-shadow:var(--bs-box-shadow-lg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .proyecto-card {
+    transition: none;
+  }
+  .proyecto-card:hover,
+  .proyecto-card:has(:focus-visible) {
+    transform: none;
+  }
 }
