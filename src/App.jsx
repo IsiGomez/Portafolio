@@ -7,6 +7,7 @@ import Projects from './components/Projects.jsx';
 import News from './components/News.jsx';
 import { construirMailto } from './utils/mailto.js';
 import Contacto from './components/Contact.jsx';
+import Footer from './components/Footer.jsx';
 
 export const ENLACES = [
   { id: 'introduccion', etiqueta: 'Introducción' },
@@ -42,14 +43,18 @@ export default function App() {
               habilidades={perfil.sobreMi?.habilidades}
             />
           )}
-          <Projects />
-          <News />
-          <Contacto
-            onEnviar={abrirCorreo}
-            mensajeExito="Se abrió tu programa de correo con el mensaje listo para enviar."
-          />
         </Estado>
+        
+        <Projects />
+        <News />
+        <Contacto
+          onEnviar={abrirCorreo}
+          mensajeExito="Se abrió tu programa de correo con el mensaje listo para enviar."
+        />
       </main>
+
+      <Footer nombre={perfil?.nombre ?? ''} redes={perfil?.redes} />
+
     </>
   );
 }

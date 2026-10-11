@@ -150,3 +150,25 @@ section[id] {
   max-width: 40rem;
   color: var(--texto-suave);
 }
+
+
+/* Footer */
+.redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-red {
+  color: inherit;
+  font-size: 1.75rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.footer-red:hover,
+.footer-red:focus-visible {
+  color: var(--celeste);
+}
