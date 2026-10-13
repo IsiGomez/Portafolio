@@ -4,6 +4,7 @@
 
 Portafolio de **DSY1104 – Desarrollo Fullstack II, Evaluación Formativa N° 2**: componentes React reutilizables, componentes de Bootstrap, datos cargados desde JSON y pruebas unitarias con Vitest.
 
+**Sitio publicado:** https://isigomez.github.io/Portafolio/
 
 ## Tecnologías
 
@@ -67,3 +68,8 @@ docs/           plan de pruebas y capturas
 ## Personalizar el contenido
 
 Edita `public/data/profile.json`, `projects.json` y `news.json` (fechas `AAAA-MM-DD`) y las imágenes de `public/img/`, manteniendo los textos `alt`.
+
+
+## Publicación
+
+El flujo `.github/workflows/main.yml` ejecuta lint y pruebas, compila y publica en GitHub Pages en cada `push` a `main`. Las rutas del sitio son relativas (`base: './'` en `vite.config.js`), por lo que funciona en la subruta de GitHub Pages.
