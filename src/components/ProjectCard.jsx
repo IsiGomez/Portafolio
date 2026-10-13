@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
  * @param {string[]} [props.tecnologias]
  * @param {string} props.enlace
  * @param {string} [props.etiquetaEnlace]
+ * @param {string} [props.imagenClase]
 */
 
 export default function ProjectCard({
@@ -70,4 +71,5 @@ ProjectCard.propTypes = {
   tecnologias: PropTypes.arrayOf(PropTypes.string),
   enlace: PropTypes.string.isRequired,
   etiquetaEnlace: PropTypes.string,
+  imagenClase: PropTypes.string,
 };

@@ -21,8 +21,8 @@ export default function App() {
   const { data: perfil, loading, error } = useJsonData(DATA_PATHS.perfil);
 
   const abrirCorreo = (datos) => {
-  if (!perfil?.email) return;
-  window.location.href = construirMailto(perfil.email, datos);
+    if (!perfil?.email) return;
+    window.location.href = construirMailto(perfil.email, datos);
   };
 
   return (
